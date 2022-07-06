@@ -10,22 +10,22 @@ let user = [
   ]
   
   
-  let currentIndex = 0;
+  let usuario = 0;
   let title = document.querySelector('#conteiner-text');
-  title.innerHTML = user[currentIndex][1];
+  title.innerHTML = user[usuario][1];
   
   function siguiente(){
-    if(currentIndex < user.length-1){
-      currentIndex++;
+    if(usuario < user.length-1){
+      usuario++;
     }
-    title.innerHTML = user[currentIndex][1];
+    title.innerHTML = user[usuario][1];
   }
   
   function anterior(){
-      if(currentIndex > 0){
-        currentIndex--;
+      if(usuario > 0){
+        usuario--;
       }
   
-      title.innerHTML = user[currentIndex][1];
+      title.innerHTML = user[usuario][1];
   
   }

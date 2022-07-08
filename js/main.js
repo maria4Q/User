@@ -11,9 +11,11 @@ let user = [
   
   
   let usuario = 0;
+  //CAJA DONDE SE ENCUENTRA EL TEXTO DEL PROYECTO
   let title = document.querySelector('#conteiner-text');
   title.innerHTML = user[usuario][1];
   
+  //UTILIZANDO EL MÉTODO LENGHT 
   function siguiente(){
     if(usuario < user.length-1){
       usuario++;

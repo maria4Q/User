@@ -10,24 +10,30 @@ let user = [
   ]
   
   
-  let usuario = 0;
+
+
+  let currentIndex = 0;
   //CAJA DONDE SE ENCUENTRA EL TEXTO DEL PROYECTO
   let title = document.querySelector('#conteiner-text');
-  title.innerHTML = user[usuario][1];
+  title.innerHTML = user[currentIndex][1];
   
-  //UTILIZANDO EL MÉTODO LENGHT 
+  /*******************************************************************
+   * UTILIZANDO EL MÉTODO LENGHT, TRABAJANDO CON ONECLICK DESDE HTML,* 
+  DETERMINANDO EL BOTÓN DE SIQUIENTE Y ANTERIOR, DANDO PROGRAMACIÓN  *
+  CON FUNCTION
+  *******************************************************************/
   function siguiente(){
-    if(usuario < user.length-1){
-      usuario++;
-    }
-    title.innerHTML = user[usuario][1];
+      if(currentIndex < user.length-1){
+        currentIndex++;
+      }
+      title.innerHTML = user[currentIndex][1];
   }
   
   function anterior(){
-      if(usuario > 0){
-        usuario--;
+      if(currentIndex > 0){
+        currentIndex--;
       }
   
-      title.innerHTML = user[usuario][1];
+      title.innerHTML = user[currentIndex][1];
   
   }

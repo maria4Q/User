@@ -5,7 +5,7 @@
 //Colecciones de objetos con {}, no almecena valores como tal
 
 
- let user2 = [
+ let user1 = [
   {
   id: 100,
   nickname: "Anna0",
